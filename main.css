@@ -47,6 +47,83 @@ html,h1,h2,h3,h4,h5,h6,a{
   background:#fff !important;
 }
 
+/* phone */
+
+@media only screen and (max-width: 768px) {
+	.about img {
+	  width: 40%;
+	  height: 40%;
+	}
+  }
+  @media (max-width:767px) {
+    .about img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .about img {
+        max-width: 240px;
+        max-height: 240px;
+    }
+}
+
+@media (min-width:992px) {
+    .about img {
+        max-width: 314px;
+        max-height: 314px;
+    }
+}
+
+@media (min-width:1200px) {
+    .about img {
+        max-width: 380px;
+        max-height: 380px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+	.touch {
+	  display: inline!important;
+	  margin: 5em!important;
+	  padding: 5em!important;
+	}
+  }
+
+  @media only screen and (max-width: 768px) {
+	.touch img {
+	  display: inline-block;
+	  padding: 5px;
+	  margin: 5px;
+	}
+  }
+
+  @media only screen and (max-width: 768px) {
+	.darkb {
+	  padding-bottom: 20px;
+	  margin-bottom: 20px;
+	}
+  }
+
+  @media only screen and (max-width: 768px) {
+	.about img {
+	  display: inline-block;
+	  padding: 5px;
+	  margin: 5px;
+	  margin-left: 40px;
+	}
+  }
+
+  @media only screen and (max-width: 768px) {
+	.contact-form h1 {
+	  text-align: center!important;
+	}
+  }
+
+
+
 /*header style*/
 .header{
 	position: relative;
@@ -112,6 +189,8 @@ html,h1,h2,h3,h4,h5,h6,a{
     width: 80%;
     border-radius: 50%
 }
+
+
 .about span{
 	display: block;
 	color: #888;
@@ -144,7 +223,8 @@ html,h1,h2,h3,h4,h5,h6,a{
 	 height: 15rem;
 	 width: 100%;
 	 margin: 1em;
-}
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
 
 .portfolio p{
 	text-align: center;
@@ -225,6 +305,10 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 /* dark mode toggle*/
 
+.darkmode{
+	transition: 0.5s ease-in-out;
+}
+
 .darkmode .darkb button{
 	color:rgb(248, 244, 237);
 	border: solid white;
@@ -250,7 +334,6 @@ html,h1,h2,h3,h4,h5,h6,a{
 	color:#dcbdff;
 }
 
-
 .darkmode .nav-link , .navbar-brand{
 	color: #f4f4f4;
 }
@@ -274,8 +357,6 @@ html,h1,h2,h3,h4,h5,h6,a{
 	color:whitesmoke;
 }
 
-
-
 .darkmode .header button{
 	border:1px  solid #ed3f3f;
 	background:#ed3f3f;
@@ -289,7 +370,6 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 /* about */
-
 
 
 .darkmode .about span{
@@ -309,3 +389,16 @@ html,h1,h2,h3,h4,h5,h6,a{
 	background-color:rgba(252, 252, 252, 0.9);
 	padding: 2px;
 }
+
+/* scrolling reveal effect*/
+
+.reveal{
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 1s all ease;
+  }
+  .reveal.active{
+	transform: translateY(0);
+	opacity: 1;
+  }
