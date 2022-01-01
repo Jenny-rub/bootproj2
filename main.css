@@ -146,6 +146,12 @@ html,h1,h2,h3,h4,h5,h6,a{
 	 margin: 1em;
 }
 
+.portfolio p{
+	text-align: center;
+	color:rgb(48, 48, 48);
+}
+/*contact*/
+
 .contact-form{
 	margin: 6em 0;
 	position: relative;		
@@ -166,4 +172,140 @@ html,h1,h2,h3,h4,h5,h6,a{
 .contact-form .right .form-control::placeholder{
 	color: #888;
 	font-size: 16px;
+}
+
+.touch img{
+	width:2.5em;
+	height: 2.5em;
+	margin-left: 2em;
+}
+
+.touch{
+	padding: 2em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.footer{
+	background-color: #582394;
+}
+
+
+
+
+/*dark button*/
+
+/* CSS */
+.darkb button {
+  background-color: rgba(51, 51, 51, 0.20);
+  border: solid black;
+  border-radius: 5px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700px;
+  line-height: 10px;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  transition: all 200ms;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  padding: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* dark mode toggle*/
+
+.darkmode .darkb button{
+	color:rgb(248, 244, 237);
+	border: solid white;
+}
+
+.darkmode {
+	background-color: rgb(26, 26, 26);
+}
+
+.darkmode header{
+	background-color: #220d3a;
+}
+
+.darkmode .navbar{
+	background-color:#220d3a;
+}
+
+.darkmode .footer{
+	background-color:#220d3a;
+}
+
+.darkmode .about h3{
+	color:#dcbdff;
+}
+
+
+.darkmode .nav-link , .navbar-brand{
+	color: #f4f4f4;
+}
+
+.darkmode .nav-link:hover{
+	color: #845cb1;
+
+}
+.darkmode .navbar-toggler{
+  background:#fff !important;
+}
+
+/*header style*/
+.darkmode .overlay{
+	background: rgba(244, 244, 244, 0);
+}
+.darkmode h1{
+	color:whitesmoke ;
+}
+.darkmode p{
+	color:whitesmoke;
+}
+
+
+
+.darkmode .header button{
+	border:1px  solid #ed3f3f;
+	background:#ed3f3f;
+	color:#fff;
+}
+
+.darkmode .contact-form .btn{
+	background:  #9b2828;
+	color: #fff;
+	border:0;
+}
+
+/* about */
+
+
+
+.darkmode .about span{
+	color: rgb(247, 238, 238);
+}
+
+.darkmode .about .desc p{
+	color:rgb(255, 227, 227);
+}
+
+.darkmode .about .desc{
+	padding: 2em;
+	border-left:4px solid #7a2121;
+}
+
+.darkmode .touch img{
+	background-color:rgba(252, 252, 252, 0.9);
+	padding: 2px;
 }
